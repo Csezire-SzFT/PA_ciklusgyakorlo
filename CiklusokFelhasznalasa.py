@@ -51,4 +51,9 @@ def amobaegysora (X_poz, O_poz, hossz):
             i += 1
     return szoveg
 
-print(amobaegysora(random.randint(1,5),random.randint(1,5),5))
+sor = 1
+while sor <= 5:
+    kiiras = amobaegysora(random.randint(1,5),random.randint(1,5),5)
+    if kiiras != "":
+        print(kiiras)
+        sor += 1
